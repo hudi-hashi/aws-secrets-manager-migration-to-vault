@@ -8,7 +8,7 @@ variable "aws_region" {
 variable "secret_names" {
   description = "Migrate these secrets from AWS secrets manager to Vault. These are the names of the secrets in AWS Secrets Manager"
   type        = list(string)
-  default = ["samg-migration-vault", "samg-migration-vault2"]
+  default = ["ian_test_secret", "hudi_test_secret"]
 }
 
 variable "vault_kv_path" {
